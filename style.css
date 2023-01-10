@@ -1,0 +1,162 @@
+/* font-family: 'Poppins', sans-serif; */
+
+/* reset */
+
+*,
+body,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+ul[class],
+ol[class] {
+  list-style: none;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+body {
+  background-color: hsl(0, 0%, 98%);
+  color: hsl(229, 6%, 66%);
+}
+
+h3 {
+  margin-bottom: 1rem;
+  color: hsl(234, 12%, 34%);
+}
+
+h1 {
+  font-size: 1.6rem;
+  font-weight: 200;
+  color: hsl(234, 12%, 34%);
+}
+
+h2 {
+  font-size: 1.7rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: hsl(234, 12%, 34%);
+}
+
+.wrapper {
+  font-family: "Poppins", sans-serif;
+  margin: 3rem 2rem;
+}
+
+.hero-text {
+  text-align: center;
+  max-width: 30rem;
+  margin: 0 auto 3rem auto;
+}
+
+.divs-container {
+  display: grid;
+  gap: 2rem;
+}
+
+.content-div {
+  padding: 2rem 2rem;
+  padding-bottom: 7rem;
+  box-shadow: 10px 10px 5px hsl(229, 6%, 66%);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.content-div > p {
+  margin-bottom: 1rem;
+}
+
+.calculator-div {
+  background-color: #fff;
+  position: relative;
+}
+.supervisor-div {
+  background-color: #fff;
+  position: relative;
+}
+.team-builder-div {
+  background-color: #fff;
+  position: relative;
+}
+.karma-div {
+  background-color: #fff;
+  position: relative;
+}
+
+.supervisor-div::before {
+  position: absolute;
+  content: "";
+  border: 3px solid hsl(180, 62%, 55%);
+  display: inline-block;
+  right: 0;
+  left: 0;
+  top: 0;
+}
+.team-builder-div::before {
+  position: absolute;
+  content: "";
+  border: 3px solid hsl(0, 78%, 62%);
+  display: inline-block;
+  right: 0;
+  left: 0;
+  top: 0;
+}
+.karma-div::before {
+  position: absolute;
+  content: "";
+  border: 3px solid hsl(34, 97%, 64%);
+  display: inline-block;
+  right: 0;
+  left: 0;
+  top: 0;
+}
+.calculator-div::before {
+  position: absolute;
+  content: "";
+  border: 3px solid hsl(212, 86%, 64%);
+  display: inline-block;
+  right: 0;
+  left: 0;
+  top: 0;
+}
+
+img {
+  position: absolute;
+  right: 2rem;
+  bottom: 2rem;
+}
+
+@media (min-width: 50rem) {
+  .divs-container {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    max-width: 75rem;
+    justify-content: center;
+    margin: 0 auto;
+  }
+  .supervisor-div {
+    grid-area: 2 / 1 / 4 / 2;
+  }
+  .team-builder-div {
+    grid-area: 1 / 2 / 3 / 3;
+  }
+  .karma-div {
+    grid-area: 3 / 2 / 5 / 3;
+  }
+  .calculator-div {
+    grid-area: 2 / 3 / 4 / 4;
+  }
+}
