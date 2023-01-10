@@ -68,11 +68,11 @@ h2 {
 }
 
 .content-div {
-  padding: 2rem 2rem;
+  padding: 2rem;
   padding-bottom: 7rem;
   box-shadow: 10px 10px 5px hsl(229, 6%, 66%);
   border-radius: 10px;
-  overflow: hidden;
+  background-image: linear-gradient(var(--accent) 5px, transparent 0);
 }
 
 .content-div > p {
@@ -96,41 +96,17 @@ h2 {
   position: relative;
 }
 
-.supervisor-div::before {
-  position: absolute;
-  content: "";
-  border: 3px solid hsl(180, 62%, 55%);
-  display: inline-block;
-  right: 0;
-  left: 0;
-  top: 0;
+.supervisor-div {
+  --accent: hsl(180, 62%, 55%);
 }
-.team-builder-div::before {
-  position: absolute;
-  content: "";
-  border: 3px solid hsl(0, 78%, 62%);
-  display: inline-block;
-  right: 0;
-  left: 0;
-  top: 0;
+.team-builder-div {
+  --accent: hsl(0, 78%, 62%);
 }
-.karma-div::before {
-  position: absolute;
-  content: "";
-  border: 3px solid hsl(34, 97%, 64%);
-  display: inline-block;
-  right: 0;
-  left: 0;
-  top: 0;
+.karma-div {
+  --accent: hsl(34, 97%, 64%);
 }
-.calculator-div::before {
-  position: absolute;
-  content: "";
-  border: 3px solid hsl(212, 86%, 64%);
-  display: inline-block;
-  right: 0;
-  left: 0;
-  top: 0;
+.calculator-div {
+  --accent: hsl(212, 86%, 64%);
 }
 
 img {
